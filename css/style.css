@@ -102,7 +102,7 @@ button {
 
 .divLi i {
   font-size: 22px;
-  color: brown;
+  color: #fff;
 }
 
 li {
@@ -141,7 +141,7 @@ li {
     margin-right: 10px;
     padding: 5px;
     border-radius: 5px;
-    border: none;
+  
     font-size: 18px;
     width: 150px;
   }
@@ -215,7 +215,7 @@ li {
       border-radius: 5px;
       box-shadow: rgb(40, 8, 62) 6px 5px 10px 0px;
       display: flex;
-      flex-direction: column;
+      
     }
     
     .textInsertContract, .textInsertName {
@@ -235,7 +235,7 @@ li {
       border-radius: 5px;
       box-shadow: 6px 5px 10px 0px grey;
       display: flex;
-      flex-direction: column;
+      
       align-items: flex-start;
     }
     
@@ -252,4 +252,5 @@ li {
   .divLi span {
     white-space: nowrap;
   }
+  
   
