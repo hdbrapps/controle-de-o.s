@@ -199,3 +199,53 @@ li {
     color: #ffff;
   }
     
+  @media (max-width: 768px) {
+    .to-do {
+      width: 100%;
+      padding: 20px;
+    }
+    
+    .header {
+      padding: 20px;
+    }
+    
+    .divInsert {
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: rgb(40, 8, 62) 6px 5px 10px 0px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .textInsertContract, .textInsertName {
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    
+    .divInsert button {
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    .divLi {
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 6px 5px 10px 0px grey;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .divLi input {
+      width: 100%;
+    }
+    
+    .header button {
+      right: 5%;
+      margin-top: -10px;
+    }
+  }
+  
