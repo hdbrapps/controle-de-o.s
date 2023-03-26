@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: x-large;
+  margin: 0;
+  font-weight: bold;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #ffff;
+}
+
+ul {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 20px;
+}
+
+.header button {
+  position: absolute;
+  right: 18%;
+  margin-top: -30px;
+} 
+
+.header i {
+  font-size: 22px;
+} 
+
+.to-do {
+  margin-top: 40px;
+  width: 60%;
+}
+
+.textInsert {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  width: 90%;
+}
+
+.divInsert {
+  padding: 10px;
+  background-color: #333;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: rgb(40, 8, 62) 6px 5px 10px 0px;
+
+}
+
+button {
+  width: 10%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.bx-plus {
+  font-size: 30px;
+  
+  background-color: rgb(139, 14, 223);
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+}
+
+.divLi {
+  margin-top: 20px;
+  padding: 10px;
+  background: rgb(40 8 62);
+  border-radius: 10px;
+  box-shadow: 6px 5px 10px 0px grey;
+  display: flex;
+  align-items: center;
+}
+
+.divLi span {
+  width: 80%;
+  color: #ffff;
+}
+
+.divLi input {
+  width: 10%;
+  outline: none;
+  accent-color: currentcolor;
+}
+
+.divLi i {
+  font-size: 22px;
+  color: brown;
+}
+
+li {
+  list-style-type: none;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+@media (max-width: 775px) {
+  input {
+    width: 70%;
+  }
+
+  .divInsert button {
+    width: 30%;
+  }
+
+  i {
+    font-size: 30px;
+    padding: 0px;
+  }
+
+  p {
+    font-size: x-large;
+    color: #ffff;
+  }
+}
+
+  .bx {
+    color: #ffff;
+  }
+
+  .textInsertContract, .textInsertName {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    width: 150px;
+  }
+  
+  .textInsertContract:focus, .textInsertName:focus {
+    outline: none;
+    box-shadow: 0 0 5px #719ECE;
+  }
+
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .searchInput {
+    width: 200px;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    font-size: 16px;
+    outline: none;
+    margin-right: 10px;
+    margin: 10px;
+  }
+  
+  .searchInput::placeholder {
+    color: #ccc;
+  }
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 8px;
+    border-radius: 20px;
+    width: 200px;
+    margin-left: 10px;
+  }
+  
+  .search-input {
+    border: none;
+    font-size: 14px;
+    width: 100%;
+    margin-right: 8px;
+  }
+  
+  .search-input:focus {
+    outline: none;
+  }
+  
+  .search-icon {
+    font-size: 20px;
+    color: #ffff;
+  }
+    
