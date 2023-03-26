@@ -38,7 +38,7 @@ function setItemDB() {
     return
   }
 
-  itensDB.push({ 'contract': textInsertContract.value, 'name': textInsertName.value })
+  itensDB.push({ 'contract': textInsertContract.value, 'name': textInsertName.value, 'completed': false })
   updateDB()
 }
 
@@ -51,14 +51,15 @@ function loadItens() {
   ul.innerHTML = "";
   itensDB = JSON.parse(localStorage.getItem('todolist')) ?? []
   itensDB.forEach((item, i) => {
-    insertItemTela(item.contract, item.name, i)
+    insertItemTela(item.contract, item.name, item.completed, i)
   })
 }
 
-function insertItemTela(contract, name, i) {
+function insertItemTela(contract, name, completed, i) {
   const li = document.createElement('li')
   li.innerHTML = `
-    <div class="divLi">
+    <div class="divLi ${completed ? 'completed' : ''}">
+      <button class="btnCheck" onclick="toggleCompleted(${i})"><i class='bx ${completed ? 'bxs-check-square' : 'bx-square'}'></i></button>
       <span class="spanContract">${contract}</span>
       <span class="spanName">${name}</span>
       <button onclick="removeItem(${i})" data-i=${i}><i class='bx bx-trash'></i></button>
@@ -88,4 +89,16 @@ function filterItens(searchValue) {
   })
 }
 
+function toggleCompleted(i) {
+  itensDB[i].completed = !itensDB[i].completed
+  updateDB()
+}
+
 loadItens()
+
+function toggleCompleted(i) {
+  itensDB[i].completed = !itensDB[i].completed
+  updateDB()
+  const li = ul.childNodes[i];
+  li.classList.toggle('completed');
+}
